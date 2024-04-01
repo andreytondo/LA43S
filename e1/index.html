@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d1c57d35f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exercício sobre Grid e FlexBox</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-dark header flex align-center w-full">
+            <h1 class="bold" id="header-title">Grid e FlexBox</h1>
+            <ul class="inline flex">
+                <li>
+                    <i class="fa-solid fa-user" title="Perfil"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-from-bracket" title="Sair"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sidebar flex flex-column">
+        <div class="flex sidebar-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Inicial</span>
+        </div>
+        <div class="flex sidebar-item">
+            <i class="fa-solid fa-id-card"></i>
+            <span>Cadastros</span>
+        </div>
+        <div class="flex sidebar-item">
+            <i class="fa-solid fa-building-circle-check"></i>
+            <span>Serviços</span>
+        </div>
+        <div class="flex sidebar-item">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Financeiro</span>
+        </div>
+        <div class="flex sidebar-item">
+            <i class="fa-solid fa-file-invoice"></i>
+            <span>Relatórios</span>
+        </div>
+        <div class="flex sidebar-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </div>
+    </section>
+
+    <main>
+        <h1 class="title" style="margin: 5px 0;">Inicial</h1>
+        <div class="content">
+
+            <section class="totalizadores">
+                <div class="box bg-red">
+                    <h1 class="title">697,65</h1>
+                    <span class="subtitle">Saldo atual</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-red">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-cobalt">
+                    <h1 class="title">155,50</h1>
+                    <span class="subtitle">Contas a pagar hoje</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-cobalt">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-green">
+                    <h1 class="title">100,00</h1>
+                    <span class="subtitle">Contas a receber hoje</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-green">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-orange">
+                    <h1 class="title">2</h1>
+                    <span class="subtitle">Agendamentos para hoje</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-orange">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-green">
+                    <h1 class="title">1</h1>
+                    <span class="subtitle">Reposição de produtos</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-green">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-orange">
+                    <h1 class="title">500</h1>
+                    <span class="subtitle">Clientes atendidos</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-orange">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-cobalt">
+                    <h1 class="title">0</h1>
+                    <span class="subtitle">Inadimplência</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-cobalt">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="box bg-red">
+                    <h1 class="title">5</h1>
+                    <span class="subtitle">Orçamentos pendentes</span>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="box-footer w-full flex justify-center bg-dark-red">
+                        <a>Visualizar</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="buttons">
+                <div class="button-box flex align-center">
+                    <div class="icon-box flex justify-center">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="flex justify-center w-full">CLIENTES</div>
+                </div>
+
+                <div class="button-box flex align-center">
+                    <div class="icon-box flex justify-center">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="flex justify-center w-full">AGENDA</div>
+                </div>
+
+                <div class="button-box flex align-center">
+                    <div class="icon-box flex justify-center">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="flex justify-center w-full">ORÇAMENTO</div>
+                </div>
+
+                <div class="button-box flex align-center">
+                    <div class="icon-box flex justify-center">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div class="flex justify-center w-full">VENDAS</div>
+                </div>
+
+                <div class="button-box flex align-center">
+                    <div class="icon-box flex justify-center">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="flex justify-center w-full">CAIXA</div>
+                </div>
+
+                <div class="button-box flex align-center">
+                    <div class="icon-box flex justify-center">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                    <div class="flex justify-center w-full">PRODUTOS</div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
