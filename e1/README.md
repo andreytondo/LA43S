@@ -5,7 +5,7 @@ apresentada na Figura 1.
 
 Figura 1 – Tela do exercício sobre Grid e FlexBox
 
-![1711937307540](image/README/1711937307540.png)
+![1711937307540](images/README/figura1.png)
 
 ## INSTRUÇÕES GERAIS:
 
