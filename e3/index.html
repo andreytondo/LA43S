@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exercício sobre Formulários</title>
+</head>
+
+<body>
+    <nav class="flex justify-between align-center">
+        <h1>Faça seu cadastro</h1>
+        <span>Campos marcados com (*) são de preenchimento obrigatório</span>
+    </nav>
+    <main class="pd-1">
+        <section>
+            <form class="flex flex-column gap-2">
+                <fieldset class="flex flex-column gap-1">
+                    <legend class="flex align-center">
+                        <span class="legend-number flex align-center">1</span>
+                        <h2>Login</h2>
+                    </legend>
+
+                    <div class="group">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="group">
+                        <label for="senha">Senha *</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="group">
+                        <label for="nascimento">Data de Nascimento *</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </div>
+
+                    <div class="group">
+                        <label>Declaro que sou</label>
+                        <input type="radio" id="menor" name="declaracaoIdade" value="menor">
+                        <span for="declaracaoIdade">menor que 18 anos</span>
+                        <input type="radio" id="maior" name="declaracaoIdade" value="maior">
+                        <span for="declaracaoIdade">maior que 18 anos</span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="flex align-center">
+                        <span class="legend-number flex align-center">2</span>
+                        <h2>Biografia</h2>
+                    </legend>
+                    <textarea name="biografia" id="biografia" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="flex align-center">
+                        <span class="legend-number flex align-center">3</span>
+                        <h2>Dados profissionais</h2>
+                    </legend>
+
+                    <label for="interesses">Interesses</label>
+                    <select name="interesses" id="interesses">
+                        <option value="front">Desenvolvedor front-end</option>
+                        <option value="back">Desenvolvedor back-end</option>
+                        <option value="full">Desenvolvedor full-stack</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="flex align-center">
+                        <span class="legend-number flex align-center">4</span>
+                        <h2>Envie seu curriculum vitae</h2>
+                    </legend>
+                    <input type="file" id="curriculum" name="curriculum">
+                </fieldset>
+
+                <div class="group">
+                    <input type="checkbox" name="recebeEmail" id="recebeEmail">
+                    <label for="recebeEmail">Desejo receber as vagas por e-mail</label>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <input class="button w-full" type="button" value="Enviar">
+</body>
+
+</html>

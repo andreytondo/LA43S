@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --dark-background-color: #5E5E5E;
+  --legend-number-color: #428BCA;
+  --background-color: #F1F1F1;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+}
+
+main {
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--dark-background-color);
+  color: white;
+  height: 40px;
+  padding: 0 2rem;
+}
+
+legend {
+  gap: 0.5rem;
+  padding-bottom: 1rem  ;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+select {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+}
+
+label {
+  display: flex;
+  width: 50%;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):not([type="button"]) {
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.pd-1 {
+  padding: 1rem;
+}
+
+.legend-number {
+  background-color: var(--legend-number-color);
+  padding: 1rem;
+  border-radius: 50%;
+  height: 0.5rem;
+  color: white;
+}
+
+.group {
+  display: flex;
+}
+
+.button {
+  padding: 0.5rem;
+  background-color: var(--dark-background-color);
+  color: white;
+}
