@@ -1,0 +1,61 @@
+/* icon-button */
+.icon-button {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: 1px solid var(--black-50);
+  background-color: white;
+  border-radius: 55px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: var(--black-50);
+  cursor: pointer;
+}
+
+.icon-button i {
+  padding: 1rem;
+  border-radius: 55px;
+  font-size: 1.5em;
+  overflow: hidden;
+  width: 27px;
+  height: 27px;
+}
+
+.icon-button.green {
+  i {
+    color: var(--green-500);
+    background-color: var(--green-50);
+  }
+}
+
+.icon-button.red {
+  i {
+    color: var(--red-500);
+    background-color: var(--red-50);
+  }
+}
+
+.icon-button.purple {
+  i {
+    color: var(--purple-500);
+    background-color: var(--purple-50);
+  }
+}
+
+.icon-button.blue {
+  i {
+    color: var(--blue-500);
+    background-color: var(--blue-50);
+  }
+}
+
+.icon-button.orange {
+  i {
+    color: var(--orange-500);
+    background-color: var(--orange-50);
+  }
+}

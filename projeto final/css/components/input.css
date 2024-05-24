@@ -1,0 +1,8 @@
+input {
+    border: none;
+    field-sizing: content;
+  }
+  
+  input:focus {
+    outline: none;
+  }

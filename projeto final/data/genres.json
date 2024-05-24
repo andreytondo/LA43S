@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Rock",
+        "total": 64
+    },
+    {
+        "id": 2,
+        "name": "Pop",
+        "total": 64
+    },
+    {
+        "id": 3,
+        "name": "Hip Hop",
+        "total": 64
+    },
+    {
+        "id": 4,
+        "name": "Jazz",
+        "total": 64
+    },
+    {
+        "id": 5,
+        "name": "Blues",
+        "total": 64
+    },
+    {
+        "id": 6,
+        "name": "Country",
+        "total": 64
+    },
+    {
+        "id": 7,
+        "name": "Classical",
+        "total": 64
+    },
+    {
+        "id": 8,
+        "name": "Electronic",
+        "total": 64
+    },
+    {
+        "id": 9,
+        "name": "Folk",
+        "total": 64
+    },
+    {
+        "id": 10,
+        "name": "Reggae",
+        "total": 64
+    },
+    {
+        "id": 11,
+        "name": "Metal",
+        "total": 64
+    },
+    {
+        "id": 12,
+        "name": "Punk",
+        "total": 64
+    },
+    {
+        "id": 13,
+        "name": "R&B",
+        "total": 64
+    },
+    {
+        "id": 14,
+        "name": "Soul",
+        "total": 64
+    }
+]

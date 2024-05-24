@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Em alta",
+        "color": "red",
+        "icon": "fa-regular fa-thumbs-up"
+    },
+    {
+        "label": "Nacionais",
+        "color": "green",
+        "icon": "fa-solid fa-house"
+    },
+    {
+        "label": "Importados",
+        "color": "purple",
+        "icon": "fa-regular fa-compass"
+    },
+    {
+        "label": "Em promoção",
+        "color": "blue",
+        "icon": "fa-regular fa-dollar-sign"
+    },  
+    {
+        "label": "Mais",
+        "color": "orange",
+        "icon": "fa-solid fa-ellipsis"
+    }
+]

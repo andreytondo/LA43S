@@ -1,0 +1,21 @@
+.radio-button-check {
+  appearance: none;
+  pointer-events: none;
+}
+
+.radio-button {
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: var(--black-50);
+    padding: .5rem .9rem;
+    border-radius: 80px;
+}
+
+radio-button[checked="true"] .radio-button {
+    background-color: var(--red-500);
+    color: white;
+}

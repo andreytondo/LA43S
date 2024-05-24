@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("./reset.css");
+@import url("./classes.css");
+
+/* pages */
+@import url("../pages/home/home.css");
+
+/* base HTML components */
+@import url("./components/input.css");
+@import url("./components/hr.css");
+
+/* application components */
+@import url("../components/footer/footer.css");
+@import url("../components/header/header.css");
+@import url("../components/radio-button/radio-button.css");
+@import url("../components/icon-button/icon-button.css");
+@import url("../components/vinyl-info/vinyl-info.css");
+
+:root {
+  --primary-text-color: #030303;
+
+  /* red */
+  --red-50: #fdebec;
+  --red-500: #801e23;
+
+  /* black */
+  --black-50: #e8e8e8;
+  --black-200: #979797;
+  --black-500: #1c1c1c;
+
+  /* gray */
+  --gray-50: #F4F4F4;
+  --gray-500: #848484;
+
+  /* green */
+  --green-50: #f1f8ed;
+  --green-500: #77b747;
+
+  /* purple */
+  --purple-50: #F6EDF4;
+  --purple-500: #A54A95;
+
+  /* blue */
+  --blue-50: #EAF2F9;
+  --blue-500: #2D7BC0;
+
+  /* orange */
+  --orange-50: #FEF3EB;
+  --orange-500: #F68235;
+
+  --header-height: 100px;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black-500);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--red-500);
+}

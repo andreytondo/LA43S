@@ -1,0 +1,46 @@
+#header-container {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo-image {
+  width: 69px;
+}
+
+#auth-container {
+  color: var(--red-500);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  color: var(--primary-text-color);
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+.search-bar {
+  color: var(--black-200);
+}
+
+.search-bar input {
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #auth-container {
+    a {
+      display: none;
+    }
+  }
+}

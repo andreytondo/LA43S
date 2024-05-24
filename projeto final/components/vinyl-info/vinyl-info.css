@@ -1,0 +1,84 @@
+.vinyl-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  span, h4 {
+    max-width: 12em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.vinyl-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vinyl-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vinyl-image img {
+  max-height: 380px;
+  max-width: 380px;
+}
+
+.vinyl-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.price span:first-child {
+  color: var(--red-500);
+  font-size: 20px;
+}
+
+.vinyl-artist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--black-50);
+  border-top: none;
+}
+
+.vinyl-artist-image img {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  object-fit: cover
+}
+
+.vinyl-artist-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vinyl-artist-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.border {
+  border: 1px solid var(--black-50);
+}
+
+@media (max-width: 1024px) {
+  .vinyl-image img {
+    width: 240px;
+    height: 240px;
+  }
+}
