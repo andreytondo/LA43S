@@ -8,12 +8,13 @@
   border: 1px solid var(--black-50);
   background-color: white;
   border-radius: 55px;
-  transition: background-color 0.3s ease;
+  color: var(--black-500);
+  border: 1px solid var(--black-100);
 }
 
 .icon-button:hover {
-  background-color: var(--black-50);
-  cursor: pointer;
+  filter: brightness(0.9);
+  transform: none!important;
 }
 
 .icon-button i {
