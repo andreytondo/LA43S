@@ -51,7 +51,7 @@
   --orange-500: #F68235;
 
   --header-height: 100px;
-  --footer-height: 30vh;
+  --footer-height: 15vh;
 }
 
 html {
@@ -63,7 +63,6 @@ html {
 }
 
 body {
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -76,4 +75,5 @@ h1 {
 
 #content {
   min-height: calc(100vh - var(--footer-height) - var(--header-height));
+  height: 100%;
 }

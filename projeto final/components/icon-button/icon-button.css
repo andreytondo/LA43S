@@ -9,7 +9,6 @@
   background-color: white;
   border-radius: 55px;
   color: var(--black-500);
-  border: 1px solid var(--black-100);
 }
 
 .icon-button:hover {

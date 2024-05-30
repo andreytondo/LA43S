@@ -60,10 +60,10 @@ const fetchPage = async (path) => {
 
 const replaceContent = async (html) => {
     const content = document.getElementById("content");
-    content.classList.add('page-transition');
+    // content.classList.add('page-transition');
     content.innerHTML = html;
     setTimeout(() => {
-        content.classList.remove('page-transition');
+        // content.classList.remove('page-transition');
     }, 1500);
 }
 
