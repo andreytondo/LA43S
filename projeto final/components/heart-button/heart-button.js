@@ -14,7 +14,7 @@ customElements.define('heart-button',
 
         render() {
             this.innerHTML = `
-            <button class="heart-button">
+            <button class="heart-button primary">
                 <i class="${this.icon}"></i>
             </button>`;
         }

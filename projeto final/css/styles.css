@@ -51,6 +51,7 @@
   --orange-500: #F68235;
 
   --header-height: 100px;
+  --footer-height: 30vh;
 }
 
 html {
@@ -71,4 +72,8 @@ h1 {
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--red-500);
+}
+
+#content {
+  min-height: calc(100vh - var(--footer-height) - var(--header-height));
 }
