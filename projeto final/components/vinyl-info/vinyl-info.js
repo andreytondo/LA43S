@@ -6,6 +6,7 @@ customElements.define('vinyl-info',
         }
 
         connectedCallback() {
+            this.id = this.getAttribute('id');
             this.vinylImage = this.getAttribute('vinyl-image');
             this.installmentPrice = this.getAttribute('installment-price');
             this.installments = this.getAttribute('installments');
@@ -32,7 +33,9 @@ customElements.define('vinyl-info',
                 ` : ''}
                 <div class="vinyl-info border pad-1">
                     <div class="vinyl-image">
-                        <img src="${this.vinylImage}" alt="vinyl" />
+                        <a href="product/${this.id}">
+                            <img src="${this.vinylImage}" alt="vinyl" />
+                        </a>
                     </div>
                     <div class="vinyl-info">
                         <div class="price">
