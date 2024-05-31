@@ -28,7 +28,7 @@ var routes = [
         title: "Vinil.br - Página não encontrada",
     },
     {
-        path: "product",
+        path: "product/:id",
         template: "./pages/product/product.html",
         script: "./pages/product/product.js",
         title: "Vinil.br - Produto",
@@ -51,27 +51,43 @@ export function startRouter() {
 }
 
 const route = (event) => {
-    const path = event.target.getAttribute("href");
+    const path = event.target.getAttribute("href"); 
     handleRouting(path);
 };
 
 const handleRouting = (path) => {
-    const route = routes.find((route) => route.path === path);
+    const route = routes.find((route) => {
+        const routeSegments = route.path.split("/");
+        const pathSegments = path.split("/");
+        return routeSegments.length === pathSegments.length && routeSegments.every((seg, i) => seg.startsWith(":") || seg === pathSegments[i]);
+    });
+
     if (route) {
-        replaceDetails(route);
+        const params = extractParams(path, route.path);
+        replaceDetails(route, params);
     } else {
         notFound();
     }
 }
 
-const replaceDetails = (route) => {
+const replaceDetails = (route, params = {}) => {
     fetchPage(route.template);
     document.title = route.title;
-    window.history.pushState({}, "", route.path);
+    window.history.pushState({}, "", generatePath(route.path, params));
     if (route.script) {
         createScript(route.script);
     }
-}
+};
+
+const generatePath = (routePath, params) => {
+    return routePath.split("/").map(segment => {
+        if (segment.startsWith(":")) {
+            const paramName = segment.slice(1);
+            return params[paramName] || segment;
+        }
+        return segment;
+    }).join("/");
+};
 
 const fetchPage = async (path) => {
     return fetch(path)
@@ -84,9 +100,9 @@ const replaceContent = async (html) => {
     const content = document.getElementById("content");
     // content.classList.add('page-transition');
     content.innerHTML = html;
-    setTimeout(() => {
+    // setTimeout(() => {
         // content.classList.remove('page-transition');
-    }, 1500);
+    // }, 1500);
 }
 
 const createScript = (path) => {
@@ -98,7 +114,7 @@ const createScript = (path) => {
 }
 
 const locationHandler = () => {
-    const path = window.location.pathname.slice(1);
+    const path = window.location.pathname.slice(1).trim();
     handleRouting(path);
 }
 
@@ -111,3 +127,16 @@ const isExpressRouting = () => {
     const expressPort = 3000;
     return window.location.href.includes(`:${expressPort}`);
 }
+
+const extractParams = (path, routePath) => {
+    const paramNames = routePath.split("/").filter(segment => segment.startsWith(":"));
+    const paramValues = path.split("/").slice(1);
+    const params = {};
+    
+    paramNames.forEach((name, index) => {
+        const paramName = name.slice(1);
+        params[paramName] = paramValues[index];
+    });
+    
+    return params;
+};

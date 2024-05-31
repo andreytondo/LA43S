@@ -1,33 +1,24 @@
 <div id="product-page" class="flex gap-3">
     <section id="product-images">
-        <img
-            src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg">
-        <div class="thumbnails">
-            <img
-                src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg">
-            <img
-                src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg">
-            <img
-                src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg">
-        </div>
+        <img id="main-image">
+        <div id="thumbnails"></div>
     </section>
     <section id="product-info">
         <div class="general-info">
             <div class="track">
-                <h3>Good Kid, M.A.A.D City</h3>
-                <h6>Kendrick Lamar</h6>
+                <h3 id="title"></h3>
+                <h6 id="artist"></h6>
             </div>
 
             <div class="additional-info">
-                <b>Formato: Vinil LP</b>
+                <b id="info"></b>
             </div>
 
             <div class="pricing">
                 <div class="price">
-                    <span>R$ 129,99</span>
-                    <span>/ à vista</span>
+                    <span id="value"></span>
                 </div>
-                <h6>ou por R$: 159,99 em até 7x</h6>
+                <h6 id="installments"></h6>
                 <button class="primary">COMPRAR AGORA</button>
                 <span id="cart-action">
                     <i class="fa-regular fa-heart"></i>
@@ -38,16 +29,14 @@
 
         <div class="description">
             <h3>Descrição do produto</h2>
-                <p>Good Kid, M.A.A.D City é o segundo álbum de estúdio do rapper americano Kendrick Lamar.
-                    Foi lançado em 22 de outubro de 2012, pela Top Dawg Entertainment, Aftermath Entertainment
-                    e Interscope Records.</p>
+                <p id="description"></p>
         </div>
 
         <div class="shipping">
             <h3>Calcular frete</h3>
             <form class="flex flex-column gap-1">
                 <div class="flex gap-1">
-                    <input id="cep" class="w-full" type="number" placeholder="CEP" maxlength="8" required />
+                    <input id="cep" class="w-full" type="text" placeholder="CEP" maxlength="9" required />
                     <button id="shipping-button" class="primary" type="button">Calcular</button>
                 </div>
                 <div id="address">
