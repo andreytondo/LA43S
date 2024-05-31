@@ -16,8 +16,8 @@ customElements.define('radio-button',
 
         render(label, name, id, checked) {
             this.innerHTML = `
-                <input type="radio" class="radio-button-check" name="${name}" id="${id}" ${checked ? 'checked' : ''}>
-                <label class="radio-button" for="${id}">${label}</label>
+                <input type="radio" class="radio-button-check" name="${name}" id="${name + id}" ${checked ? 'checked' : ''}>
+                <label class="radio-button" for="${name + id}">${label}</label>
             `;
         }
         
