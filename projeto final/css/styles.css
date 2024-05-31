@@ -4,6 +4,7 @@
 
 /* pages */
 @import url("../pages/home/home.css");
+@import url("../pages/product/product.css");
 
 /* base HTML components */
 @import url("./input.css");
@@ -76,4 +77,10 @@ h1 {
 #content {
   min-height: calc(100vh - var(--footer-height) - var(--header-height));
   height: 100%;
+}
+
+#product-info, .track, .additional-info, .pricing, .description, .shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
