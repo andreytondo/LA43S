@@ -21,11 +21,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .vinyl-image img {
   max-height: 380px;
   max-width: 380px;
+  transition: transform 0.1s;
 }
 
 .vinyl-image img:hover {
@@ -36,16 +38,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.price {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.price span:first-child {
-  color: var(--red-500);
-  font-size: 20px;
 }
 
 .vinyl-artist {
@@ -74,10 +66,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-
-.border {
-  border: 1px solid var(--black-50);
 }
 
 @media (max-width: 1024px) {

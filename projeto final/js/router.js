@@ -38,7 +38,7 @@ var routes = [
 export function startRouter() {
     document.body.addEventListener("click", (event) => {
         if (isExpressRouting()) {
-            console.log("Express routing is enabled. Router will not work.");
+            console.info("Express routing is enabled");
             return;
         }
         if (event.target.getAttribute("href")) {

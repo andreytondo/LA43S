@@ -11,14 +11,10 @@
 #heading {
   h2 {
     color: var(--black-50);
-    font-size: 64px;
-    font-weight: 800;
   }
-
   h4 {
+    font-weight: 400;
     color: var(--black-50);
-    font-size: 28px;
-    font-weight: 200;
   }
 }
 
@@ -26,27 +22,13 @@
   margin: 0 1rem;
 }
 
-h3 {
-  font-size: 48px;
-  font-weight: 600;
-  color: var(--black-500);
-}
-
-h4 {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--black-500);
-}
-
-strong {
-  color: var(--red-500);
-}
-
 #genre-container-wrapper {
   display: flex;
   align-items: center;
   position: relative;
   width: 90vw;
+  justify-content: space-between;
+  gap: 0.1rem;
 }
 
 #genre-container {
@@ -61,18 +43,11 @@ strong {
   border: none;
   cursor: pointer;
   padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   z-index: 1;
 }
 
-#scroll-left {
-  left: 0;
-}
-
-#scroll-right {
-  right: 0;
+#scroll-left, #scroll-right {
+  padding: 0.6rem 0.8rem;
 }
 
 .arrow-button:disabled {

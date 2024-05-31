@@ -1,6 +1,6 @@
-import { loadCategories } from './components/category.js';
-import { loadGenres } from './components/genre.js';
-import { startHorizontalScroll } from './components/horizontalScroll.js';
+import { loadCategories } from '../../js/category.js';
+import { loadGenres } from '../../js/genre.js';
+import { startHorizontalScroll } from '../../js/horizontalScroll.js';
 
 loadCategories();
 loadGenres();
