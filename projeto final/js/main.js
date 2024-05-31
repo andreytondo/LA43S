@@ -6,7 +6,6 @@ window.onload = () => {
     loadFooter();
 };
 
-
 function loadHeader() {
     fetch('./components/header/header.html')
         .then(response => response.text())

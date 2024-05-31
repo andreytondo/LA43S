@@ -34,6 +34,7 @@ function fillVinylsContainer(vinyls) {
 
 function createVinylInfo(vinyl) {
     const vinylInfo = document.createElement('vinyl-info');
+    vinylInfo.setAttribute('id', vinyl.id);
     vinylInfo.setAttribute('vinyl-image', vinyl.image);
     vinylInfo.setAttribute('installment-price', vinyl.installmentPrice);
     vinylInfo.setAttribute('installments', vinyl.installments);
