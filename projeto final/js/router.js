@@ -1,3 +1,15 @@
+/*
+    Router
+    - Initializes page routing
+    - Loads page content
+    - Updates page title
+    - Updates URL
+    - Loads specific page scripts
+    - Handles page not found
+
+    won't work with live server, please use the express server provided in server.js file
+*/
+
 var routes = [
     {
         path: "login",
@@ -15,10 +27,20 @@ var routes = [
         template: "./pages/404/404.html",
         title: "Vinil.br - Página não encontrada",
     },
+    {
+        path: "product",
+        template: "./pages/product/product.html",
+        script: "./pages/product/product.js",
+        title: "Vinil.br - Produto",
+    }
 ];
 
 export function startRouter() {
     document.body.addEventListener("click", (event) => {
+        if (isExpressRouting()) {
+            console.log("Express routing is enabled. Router will not work.");
+            return;
+        }
         if (event.target.getAttribute("href")) {
             event.preventDefault();
             route(event);
@@ -83,4 +105,9 @@ const locationHandler = () => {
 const notFound = () => {
     const route = routes.find((route) => route.path === "404");
     replaceDetails(route);
+}
+
+const isExpressRouting = () => {
+    const expressPort = 3000;
+    return window.location.href.includes(`:${expressPort}`);
 }
