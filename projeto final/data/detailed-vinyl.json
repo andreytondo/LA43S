@@ -7,13 +7,92 @@
     "price": 129.99,
     "installmentPrice": 159.99,
     "installments": 7,
-    "inCart": false,
     "description": "Good Kid, M.A.A.D City é o segundo álbum de estúdio do rapper americano Kendrick Lamar. Foi lançado em 22 de outubro de 2012, pela Top Dawg Entertainment, Aftermath Entertainment e Interscope Records.",
     "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg",
     "thumbnails": [
       "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg",
       "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg",
       "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ca/5b/c0/ca5bc0b3-d81d-cc6c-0d19-54b9eedb6dbd/12UMGIM52990.rgb.jpg/600x600bb.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "After Hours",
+    "artist": "The Weeknd",
+    "info": "Formato: Vinil LP",
+    "price": 129.99,
+    "installmentPrice": 159.99,
+    "installments": 7,
+    "description": "After Hours é o quarto álbum de estúdio do cantor canadense The Weeknd. Foi lançado em 20 de março de 2020, pela XO e Republic Records.",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.jpg",
+    "thumbnails": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Violeta",
+    "artist": "Terno Rei",
+    "info": "Formato: Vinil LP",
+    "price": 129.99,
+    "installmentPrice": 159.99,
+    "installments": 7,
+    "description": "Violeta é o quarto álbum de estúdio da banda brasileira Terno Rei. Foi lançado em 2021, pela Balaclava Records.",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d4/75/2a/d4752a6f-2420-78a7-3b1a-72737b373d52/5059033244917_cover.jpg/600x600bb.jpg",
+    "thumbnails": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d4/75/2a/d4752a6f-2420-78a7-3b1a-72737b373d52/5059033244917_cover.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d4/75/2a/d4752a6f-2420-78a7-3b1a-72737b373d52/5059033244917_cover.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d4/75/2a/d4752a6f-2420-78a7-3b1a-72737b373d52/5059033244917_cover.jpg/600x600bb.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Rumors",
+    "artist": "Fleetwood Mac",
+    "info": "Formato: Vinil LP",
+    "price": 129.99,
+    "installmentPrice": 159.99,
+    "installments": 7,
+    "description": "Rumours é o décimo primeiro álbum de estúdio da banda britânica Fleetwood Mac. Foi lançado em 4 de fevereiro de 1977, pela Warner Bros. Records.",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/600x600bb.jpg",
+    "thumbnails": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/600x600bb.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Whatever People Say I Am, That's What I'm Not",
+    "artist": "Arctic Monkeys",
+    "info": "Formato: Vinil LP",
+    "price": 129.99,
+    "installmentPrice": 159.99,
+    "installments": 7,
+    "description": "Whatever People Say I Am, That's What I'm Not é o álbum de estreia da banda britânica Arctic Monkeys. Foi lançado em 23 de janeiro de 2006, pela Domino Recording Company.",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/600x600bb.jpg",
+    "thumbnails": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/cf/9b/96/cf9b9637-f619-eceb-5382-e9b4d44e74fb/dj.npwkgmai.jpg/600x600bb.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Ventura",
+    "artist": "Los Hermanos",
+    "info": "Formato: Vinil LP",
+    "price": 129.99,
+    "installmentPrice": 159.99,
+    "installments": 7,
+    "description": "Ventura é o quarto álbum de estúdio da banda brasileira Los Hermanos. Foi lançado em 2003, pela Abril Music.",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/8a/86/588a8648-9cd2-0505-a40b-fb1b2a1b7fb8/mzi.ijqiglri.jpg/600x600bb.jpg",
+    "thumbnails": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/8a/86/588a8648-9cd2-0505-a40b-fb1b2a1b7fb8/mzi.ijqiglri.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/8a/86/588a8648-9cd2-0505-a40b-fb1b2a1b7fb8/mzi.ijqiglri.jpg/600x600bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/8a/86/588a8648-9cd2-0505-a40b-fb1b2a1b7fb8/mzi.ijqiglri.jpg/600x600bb.jpg"
     ]
   }
 ]
