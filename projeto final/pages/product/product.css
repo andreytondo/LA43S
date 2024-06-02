@@ -63,6 +63,10 @@
   }
 }
 
+#buy-now {
+  max-width: 600px;
+}
+
 @media (max-width: 500px) {
   #product-page {
     flex-direction: column;

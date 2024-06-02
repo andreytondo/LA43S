@@ -11,6 +11,16 @@ document.getElementById('cep').onkeydown = function(event) {
   }
 };
 
+document.getElementById('buy-now').addEventListener('click', (event) => {
+  const cart = storage.getItem('cart') || [];
+  const existingItem = cart.find(item => item.productId === productId);
+  if (!existingItem) {
+    cart.push({ productId, quantity: 1 });
+  }
+  storage.setItem('cart', cart);
+  window.location.href = 'cart';
+});
+
 document.getElementById('cart-link').addEventListener('click', (event) => {
   event.preventDefault();
   const cart = storage.getItem('cart') || [];
