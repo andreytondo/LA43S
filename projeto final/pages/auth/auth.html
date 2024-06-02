@@ -1,15 +1,15 @@
-<section style="margin: 0 25%;" class="flex flex-column justify-center align-center h-full">
+<section id="login-container" class="flex flex-column justify-center align-center">
     <div class="flex align-center justify-center gap-1">
-        <img style="width: 128px; height: 128px;" src="./images/logo.png" alt="Logo Vinil.br">
+        <img id="logo" src="./images/logo.png" alt="Logo Vinil.br">
         <h1>Vinil.br</h1>
     </div>
-    <div class="w-full flex flex-column justify-center gap-1">
+    <div id="auth-container" class="flex flex-column justify-center gap-1">
         <h1>Login</h2>
         <form class="flex flex-column gap-1">
-            <input type="text" name="email" placeholder="E-mail" required>
-            <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit" class="primary">Entrar</button>
+            <input type="text" id="email" placeholder="E-mail" maxlength="100" required>
+            <input type="password" id="password" placeholder="Senha" maxlength="16" required>
         </form>
+        <button id="login-button" type="submit" class="primary">Entrar</button>
     </div>
-    <a href="#/register">Não tem uma conta? Cadastre-se</a>
+    <a href="register">Não tem uma conta? Cadastre-se</a>
 </section>

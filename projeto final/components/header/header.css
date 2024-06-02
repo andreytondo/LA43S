@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: white;
 }
 
 #logo-image {
@@ -29,6 +30,7 @@ nav ul li {
 
 .search-bar input {
   border-radius: 0.5rem;
+  width: 220px;
 }
 
 @media (max-width: 900px) {
@@ -39,7 +41,7 @@ nav ul li {
 
 @media (max-width: 500px) {
   #auth-container {
-    a {
+    a span {
       display: none;
     }
   }

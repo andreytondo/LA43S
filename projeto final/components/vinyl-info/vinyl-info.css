@@ -5,6 +5,7 @@
 
   span, h4 {
     max-width: 12em;
+    padding: 2px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

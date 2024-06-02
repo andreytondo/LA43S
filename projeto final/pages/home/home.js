@@ -1,11 +1,19 @@
 import { loadCategories } from '../../js/category.js';
 import { loadGenres } from '../../js/genre.js';
-import { startHorizontalScroll } from '../../js/horizontalScroll.js';
+import { startHorizontalScroll } from '../../js/horizontal-scroll.js';
 
 loadCategories();
 loadGenres();
 handleScroll();
 loadVinyls(null);
+
+document.getElementById('genre-container').addEventListener('click', event => {
+    const genreValue = Array.from(document.getElementsByName('genre')).find(rb => rb.checked)?.id;
+    if (genreValue) {
+        const genreId = genreValue.split('genre')[1];
+        filterByGenre(parseInt(genreId));
+    }
+});
 
 function handleScroll() {
     const container = document.getElementById('genre-container');
@@ -20,16 +28,24 @@ function loadVinyls(genreId, page = 1, pageSize = 6) {
         .then(vinyls => {
             fillVinylsContainer(vinyls);
         }
-    );
+        );
 }
 
 function fillVinylsContainer(vinyls) {
     const container = document.getElementById('vinyl-container');
+    const emtpy = document.getElementById('empty');
+    emtpy.style.display = "none";
     container.innerHTML = '';
-    vinyls.forEach(vinyl => {
-        const vinylElement = createVinylInfo(vinyl);
-        container.appendChild(vinylElement);
-    });
+    if (vinyls.length) {
+        vinyls.forEach(vinyl => {
+            const vinylElement = createVinylInfo(vinyl);
+            container.appendChild(vinylElement);
+        });
+    } else {
+        emtpy.style.display = "flex";
+        emtpy.classList = "justify-center align-center w-full"
+        emtpy.innerHTML = `<h4>Nenhum vinil encontrado</h4>`;
+    }
 }
 
 function createVinylInfo(vinyl) {
@@ -53,6 +69,10 @@ function createVinylInfo(vinyl) {
 function fetchVinyls(genreId, page, pageSize) {
     return fetch('/data/vinyls.json')
         .then(response => response.json())
-        .then(vinyls => vinyls.filter(vinyl => genreId === null || vinyl.genreId === genreId))
+        .then(vinyls => vinyls.filter(vinyl => !genreId || vinyl.genreId === genreId))
         .catch(error => console.error('Erro ao carregar os vinis: ', error));
+}
+
+function filterByGenre(genreId) {
+    loadVinyls(genreId);
 }

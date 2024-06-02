@@ -5,10 +5,11 @@
 /* pages */
 @import url("../pages/home/home.css");
 @import url("../pages/product/product.css");
+@import url("../pages/cart/cart.css");
+@import url("../pages/auth/auth.css");
 
 /* base HTML components */
 @import url("./input.css");
-@import url("./hr.css");
 @import url("./button.css");
 
 /* application components */
@@ -68,6 +69,16 @@ body {
   flex-direction: column;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -75,17 +86,17 @@ h1 {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 800;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -114,4 +125,62 @@ b {
 
 .border {
   border: 1px solid var(--black-50);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.no-decoration {
+  text-decoration: none!important;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--red-500);
+  border-radius: 45px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+  }
 }

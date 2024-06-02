@@ -34,10 +34,9 @@ customElements.define('radio-button',
 
             const label = this.querySelector('label');
             const radioId = label.getAttribute('for');
-            const radioButton = document.getElementById(radioId);
-            const input = radioButton.querySelector('input');
+            const input = document.getElementById(radioId);
             if (!input?.checked) {
-                radioButton.setAttribute('checked', true);
+                this.setAttribute('checked', true);
                 input.checked = true;
                 const event = new Event('change', { bubbles: true });
                 input.dispatchEvent(event);

@@ -29,10 +29,26 @@ footer {
   font-size: 14px;
 }
 
-#newsletter-form {
-  width: max-content;
+#footer #info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  footer {
+    height: 100%;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #footer ul {
+    flex-direction: row;
+  }
 }

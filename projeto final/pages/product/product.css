@@ -62,3 +62,25 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 500px) {
+  #product-page {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  #product-info {
+    gap: 1rem;
+  }
+
+  #product-images {
+    gap: 1rem;
+  }
+
+  #thumbnails {
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}

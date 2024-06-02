@@ -3,9 +3,8 @@
         <img id="logo-image" src="./images/logo.png" alt="Vinil.br">
         <h1>Vinil.br</h1>
     </div>
-    <p>A loja de vinis totalmente brasileira</p>
-    <div class="social-icons" id="social-links">
-        <!-- Social links will be populated by JavaScript -->
+    <div class="flex flex-column justify-center align-center">
+        <p>A loja de vinis totalmente brasileira</p>
     </div>
 </section>
 <section class="column" id="navigation">
@@ -22,10 +21,21 @@
         </li>
     </ul>
 </section>
-<section class="column" id="popular">
-    <h5>Mais acessados</h5>
-    <ul id="popular-links">
-        <!-- Popular links will be populated by JavaScript -->
+<section class="column">
+    <h5>Formas de pagamento</h5>
+    <ul class="flex gap-1">
+        <li title="Visa">
+            <i class="fab fa-cc-visa"></i>
+        </li>
+        <li title="Mastercard">
+            <i class="fab fa-cc-mastercard"></i>
+        </li>
+        <li title="Paypal">
+            <i class="fab fa-cc-paypal"></i>
+        </li>
+        <li title="Boleto">
+            <i class="fas fa-barcode"></i>
+        </li>
     </ul>
 </section>
 <section class="column" id="help">
@@ -39,11 +49,12 @@
         </li>
     </ul>
 </section>
-<section class="column newsletter">
-    <h5>Fique por dentro de promoções</h5>
-    <p>Informe seu e-mail para receber promoções e novidades</p>
-    <form id="newsletter-form">
-        <input name="newsletter-email" type="email" placeholder="E-mail" required maxlength="50">
-    </form>
-    <button class="primary">Inscrever-se</button>
+<section class="column">
+    <h5>Mais informações</h5>
+    <div id="info">
+        <span>CPNJ: 12.345.678/0001-90</span>
+        <span>Inscrição Estadual: 123.456.789.000</span>
+        <span>Rua dos Vinis, 123, Bairro Musical, Cidade da Música, SP</span>
+        <span>E-mail: atendimento@vinil.br</span>
+    </div>
 </section>

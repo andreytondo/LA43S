@@ -1,0 +1,40 @@
+<div id="title" class="flex flex-column justify-center gap-1 align-center">
+  <h3>Carrinho</h3>
+  <line-break></line-break>
+</div>
+
+<div id="cart-page" class="flex align-center justify-around">
+  <section id="products" class="flex flex-column"></section>
+  <section id="summary">
+    <div class="flex flex-column justify-between gap-1">
+      <div class="flex justify-between">
+        <h4>Subtotal</h4>
+        <span id="subtotal"></span>
+      </div>
+      <div class="flex justify-between">
+        <h4>Descontos</h4>
+        <span id="discounts"></span>
+      </div>
+    </div>
+
+    <div class="flex justify-between">
+      <h4>Total</h4>
+      <span id="total"></span>
+    </div>
+
+    <div id="buttons" class="flex justify-between">
+      <a href="">
+        <button id="return" class="primary">
+          <i class="fas fa-arrow-left"></i>
+          Continuar comprando
+        </button>
+      </a>
+      <a href="login">
+        <button id="checkout" class="primary">
+          Finalizar compra
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,13 @@
+#login-container {
+  height: 70vh;
+}
+
+#logo {
+  width: 128px; 
+  height: 128px;
+}
+
+#auth-container {
+  width: 25%;
+  padding: 2rem;
+}

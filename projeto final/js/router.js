@@ -14,13 +14,14 @@ var routes = [
     {
         path: "login",
         template: "./pages/auth/auth.html",
+        script: "./pages/auth/auth.js",
         title: "Vinil.br - Login",
     },
     {
         path: "",
         template: "./pages/home/home.html",
-        title: "Vinil.br - Home",
         script: "./pages/home/home.js",
+        title: "Vinil.br - Home"
     },
     {
         path: "404",
@@ -32,16 +33,22 @@ var routes = [
         template: "./pages/product/product.html",
         script: "./pages/product/product.js",
         title: "Vinil.br - Produto",
-    }
+    },
+    {
+        path: "cart",
+        template: "./pages/cart/cart.html",
+        script: "./pages/cart/cart.js",
+        title: "Vinil.br - Carrinho",
+    },
 ];
 
 export function startRouter() {
     document.body.addEventListener("click", (event) => {
-        if (isExpressRouting()) {
-            console.info("Express routing is enabled");
-            return;
-        }
         if (event.target.getAttribute("href")) {
+            if (isExpressRouting()) {
+                console.info("Express routing is enabled, click event will not be handled.");
+                return;
+            }
             event.preventDefault();
             route(event);
         }
