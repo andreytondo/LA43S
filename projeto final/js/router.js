@@ -82,7 +82,9 @@ const replaceDetails = (route, params = {}) => {
     document.title = route.title;
     window.history.pushState({}, "", generatePath(route.path, params));
     if (route.script) {
-        createScript(route.script);
+        setTimeout(() => {
+            createScript(route.script);
+        }, 200); // this prevents the script from loading before de document is ready (defer didnt't work)
     }
 };
 
@@ -117,6 +119,7 @@ const createScript = (path) => {
     script.src = path;
     script.async = true;
     script.type = "module";
+    script.defer = true;
     document.body.appendChild(script);
 }
 
