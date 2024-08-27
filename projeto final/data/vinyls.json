@@ -1,8 +1,6 @@
 [
     {
         "id": 1,
-        "installmentPrice": "R$ 129,90",
-        "installments": "7x",
         "title": "good kid, m.A.A.d city",
         "tracks": "17",
         "duration": "1h 32min",
@@ -15,12 +13,13 @@
             "image": "https://yt3.googleusercontent.com/V4FqOieQ9y9dnErXPUZNWl1hyLafxIK7F55n5M8LVhPBmEou8kAbNuMlUZx23DoJHvH1sWG56No=s900-c-k-c0x00ffffff-no-rj",
             "description": "Artista",
             "liked": "false"
-        }
+        },
+        "fullPrice": 129.99,
+        "price": 99.99,
+        "discountPrice": 99.99
     },
     {
         "id": 2,
-        "installmentPrice": "R$ 129,90",
-        "installments": "7x",
         "title": "After Hours",
         "tracks": "14",
         "duration": "1h 4min",
@@ -33,12 +32,13 @@
             "image": "https://i.scdn.co/image/ab6761610000e5eb214f3cf1cbe7139c1e26ffbb",
             "description": "Artista",
             "liked": "false"
-        }
+        },
+        "price": 129.99,
+        "installmentPrice": 159.99,
+        "installments": 7
     },
     {
         "id": 3,
-        "installmentPrice": "R$ 129,90",
-        "installments": "7x",
         "title": "Violeta",
         "tracks": "10",
         "duration": "35min",
@@ -51,12 +51,13 @@
             "image": "https://billboard.com.br/wp-content/uploads/2023/07/Terno_Rei_por_Samuel_Esteves_1-scaled.webp",
             "description": "Artista",
             "liked": "true"
-        }
+        },
+        "price": 129.99,
+        "installmentPrice": 159.99,
+        "installments": 7
     },
     {
         "id": 4,
-        "installmentPrice": "R$ 129,90",
-        "installments": "7x",
         "title": "Rumors",
         "tracks": "11",
         "duration": "40min",
@@ -69,12 +70,13 @@
             "image": "https://i.scdn.co/image/ab6761610000e5ebc8752dd511cda8c31e9daee8",
             "description": "Artista",
             "liked": "true"
-        }
+        },
+        "price": 129.99,
+        "installmentPrice": 159.99,
+        "installments": 7
     },
     {
         "id": 5,
-        "installmentPrice": "R$ 129,90",
-        "installments": "7x",
         "title": "Whatever People Say I Am, That's What I'm Not",
         "tracks": "13",
         "duration": "40min",
@@ -87,12 +89,13 @@
             "image": "https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f",
             "description": "Banda",
             "liked": "true"
-        }
+        },
+        "price": 129.99,
+        "installmentPrice": 159.99,
+        "installments": 7
     },
     {
         "id": 6,
-        "installmentPrice": "R$ 129,90",
-        "installments": "7x",
         "title": "Ventura",
         "tracks": "12",
         "duration": "45min",
@@ -105,7 +108,10 @@
             "image": "https://i.scdn.co/image/ab6761610000e5ebc7fe84d060ca15142db4f115",
             "description": "Banda",
             "liked": "false"
-        }
+        },
+        "price": 129.99,
+        "installmentPrice": 159.99,
+        "installments": 7
     }
         
 ]

@@ -9,7 +9,7 @@ customElements.define('vinyl-info',
             this.id = this.getAttribute('id');
             this.vinylImage = this.getAttribute('vinyl-image');
             this.installmentPrice = this.getAttribute('installment-price');
-            this.installments = this.getAttribute('installments');
+            this.installments = this.getAttribute('installments') !== 'undefined' ? this.getAttribute('installments') : null;
             this.title = this.getAttribute('title');
             this.tracks = this.getAttribute('tracks');
             this.duration = this.getAttribute('duration');
@@ -19,11 +19,13 @@ customElements.define('vinyl-info',
             this.artistDescription = this.getAttribute('artist-description');
             this.likedArtist = this.getAttribute('liked-artist');
             this.available = this.getAttribute('available');
-
+            this.price = this.getAttribute('price') !== 'undefined' ? this.getAttribute('price') : null;
+            this.fullPrice = this.getAttribute('full-price') !== 'undefined' ? this.getAttribute('full-price') : null;
+            this.discountPrice = this.getAttribute('discount-price') !== 'undefined' ? this.getAttribute('discount-price') : null;
             this.render();
         }
 
-        render() { // separar em componentes menores e mais manejáveis
+        render() {
             this.innerHTML = `
             <div class="vinyl-box w-full">
                 ${this.available ? `
@@ -39,8 +41,13 @@ customElements.define('vinyl-info',
                     </div>
                     <div class="vinyl-info">
                         <div class="price">
-                            <span>R$ 129,99</span>
-                            <span>/ Em até 7x</span>
+                            <price-handler
+                                full-price="${this.fullPrice || this.price}"
+                                ${this.discountPrice ? `discount-price="${this.discountPrice}"` : ''}
+                                ${this.installmentPrice ? `installment-price="${this.installmentPrice}"` : ''}
+                                ${this.installments ? `installments="${this.installments}"` : ''}
+                                show-installments="${this.installments ? 'true' : 'false'}"
+                            ></price-handler>
                         </div>
                         <h4>${this.title}</h4>
                         <div class="vinyl-description">

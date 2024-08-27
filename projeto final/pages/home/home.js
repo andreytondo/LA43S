@@ -49,6 +49,7 @@ function fillVinylsContainer(vinyls) {
 }
 
 function createVinylInfo(vinyl) {
+    console.debug(vinyl);
     const vinylInfo = document.createElement('vinyl-info');
     vinylInfo.setAttribute('id', vinyl.id);
     vinylInfo.setAttribute('vinyl-image', vinyl.image);
@@ -63,6 +64,9 @@ function createVinylInfo(vinyl) {
     vinylInfo.setAttribute('artist-description', vinyl.artist.description);
     vinylInfo.setAttribute('liked-artist', vinyl.artist.liked);
     vinylInfo.setAttribute('available', vinyl.available);
+    vinylInfo.setAttribute('price', vinyl.price);
+    vinylInfo.setAttribute('full-price', vinyl.fullPrice);
+    vinylInfo.setAttribute('discount-price', vinyl.discountPrice);
     return vinylInfo;
 }
 

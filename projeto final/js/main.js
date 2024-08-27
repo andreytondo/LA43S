@@ -30,10 +30,15 @@ function verifyUser() {
     const user = storage.getItem('user');
     if (user) {
         document.getElementById('auth-icon').innerHTML = `
-            <a href="conta">
+            <a id="logout">
                 <i class="fas fa-user"></i>
-                <span>Conta</span>
+                <span>Sair</span>
             </a>
         `
+
+        document.getElementById('auth-icon').addEventListener('click', () => {
+            storage.removeItem('user');
+            window.location.reload();
+        });
     }
 }

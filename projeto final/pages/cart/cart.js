@@ -52,7 +52,8 @@ function createCartItemElement(item, quantity) {
   const div = document.createElement('div');
   div.className = 'product flex align-center gap-2 pad-2 w-full';
   div.innerHTML = `
-      <div>
+      <div style="position: relative;">
+        <button class="remove-button">Remover</button>
         <img id="main-image"src="${item.image}">
       </div>
       <div>
@@ -76,6 +77,10 @@ function createCartItemElement(item, quantity) {
         <input-number for="${item.id}" value="${quantity}"></input-number>
       </div>
   `;
+
+  const removeButton = div.querySelector('.remove-button');
+  removeButton.addEventListener('click', () => removeProduct(item.id));
+
   return div;
 }
 
@@ -93,3 +98,11 @@ function updateQuantity(productId, quantity) {
   }
   storage.setItem('cart', cart);
 }
+
+function removeProduct(productId) {
+  const cart = storage.getItem('cart');
+  const index = cart.findIndex(item => item.productId === productId.toString());
+  cart.splice(index, 1);
+  storage.setItem('cart', cart);
+  calcTotals();
+} 

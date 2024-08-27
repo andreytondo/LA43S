@@ -8,5 +8,5 @@ function authenticate() {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
   storage.setItem('user', { email, password });
-  window.location.href = 'home';
+  window.location.href = '';
 }
