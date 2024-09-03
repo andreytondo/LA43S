@@ -40,6 +40,12 @@ var routes = [
         script: "./pages/cart/cart.js",
         title: "Vinil.br - Carrinho",
     },
+    {
+        path: 'register',
+        template: './pages/sign-up/sign-up.html',
+        script: './pages/sign-up/sign-up.js',
+        title: 'Vinil.br - Cadastro'
+    }
 ];
 
 export function startRouter() {
