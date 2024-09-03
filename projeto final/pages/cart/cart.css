@@ -25,9 +25,9 @@
 
 .remove-button {
   background-color: var(--red-500);
-  position: absolute;
-  top: 0;
-  right: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
 }
 
 @media (max-width: 500px) {

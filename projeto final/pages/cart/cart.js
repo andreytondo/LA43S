@@ -53,11 +53,10 @@ function createCartItemElement(item, quantity) {
   div.className = 'product flex align-center gap-2 pad-2 w-full';
   div.innerHTML = `
       <div style="position: relative;">
-        <button class="remove-button">Remover</button>
         <img id="main-image"src="${item.image}">
       </div>
-      <div>
-        <div>
+      <div class="flex flex-column gap-1 w-full">
+        <div class="flex flex-column gap-1">
           <h6><b>${item.title}</b></h6>
           <h6>${item.artist}</h6>
         </div>
@@ -74,7 +73,10 @@ function createCartItemElement(item, quantity) {
           <b id="info">${item.info}</b>
         </div>
 
-        <input-number for="${item.id}" value="${quantity}"></input-number>
+        <div class="flex align-center gap-1">
+          <input-number for="${item.id}" value="${quantity}"></input-number>
+          <button class="remove-button">Remover</button>
+        </div>
       </div>
   `;
 
